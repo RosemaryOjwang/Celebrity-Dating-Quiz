@@ -14,22 +14,31 @@
     <p>Please enter your details in the form below, so we can match you with someone you are compatible with.</p>
     <form>
       <label for = "age">Age</label>
-      <input type = "text" id = "age"  class = "form-control" name = "age" required><br>
-        <div class = "invalid-feedback">
-          Please input your age to proceed.
-        </div><p>
+      <input type = "text" id = "age"  class = "form-control" name = "age" required><p>
       <label for = "gender">Gender</label>
-      <input type = "text" id = "gender" name = "gender" class = "form-control" required><br>
-      <div class = "invalid-feedback">
-        Please input your gender to proceed.
-      </div><p>
+      <input type = "text" id = "gender" name = "gender" class = "form-control" required><p>
       <label for = "skin_color">Skin color</label>
-      <input type = "text" id = "skin_color" name = "skin_color" class = "form-control" required><br>
-      <div class = "invalid-feedback">
-        Please provide your skin color to proceed.
-      </div><p>
+      <input type = "text" id = "skin_color" name = "skin_color" class = "form-control" required><p>
       <button type="submit" class = "btn btn-primary">Match me</button>
     </form>
+    </div>
+    <div id = "errorMessaGE" class = "hidden">
+      Error! Pleas fill all blank fields.
+    </div>
+  <div id = "Nazizi" class = "hidden">
+    <div class = "card card-body card-text">
+    Wow, you are compatible with Nazizi!
+  </div>
+  </div>
+  <div id = "Jalas" class = "hidden">
+    <div class = "card card-body card-text">
+    Congratulations, you are compatible with Jalas!
+  </div>
+  </div>
+  <div id = "JuaCali" class = "hidden">
+    <div class = "card card-body card-text">
+    Alas, you are compatible with JuaCali.
+  </div>
   </div>
 </body>
 
