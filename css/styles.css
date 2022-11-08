@@ -4,3 +4,13 @@
 body  {
   margin-left: 10%;
 }
+.card {
+  width: 40%;
+  background-color: #9b95b8;
+  font-weight: 900;
+  text-align: center;
+  box-shadow: 15px 0 25px #000000;
+}
+.hidden {
+  display: none;
+}
