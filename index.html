@@ -3,6 +3,7 @@
 
 <head>
   <title>Celebrity Dating Quiz</title>
+  <link href = "css/bootstrap.css" rel = "stylesheet" type = "text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/scripts.js"></script>
 </head>
@@ -10,15 +11,24 @@
 <body>
   <div>
     <h1>Celebrity Dating Quiz</h1>
-    <p>Please enter your details in the form below, so we can match you with someone you are comoatible with.</p>
+    <p>Please enter your details in the form below, so we can match you with someone you are compatible with.</p>
     <form>
       <label for = "age">Age</label>
-      <input type = "text" id = "age" name = "age"><p>
+      <input type = "text" id = "age"  class = "form-control" name = "age" required><br>
+        <div class = "invalid-feedback">
+          Please input your age to proceed.
+        </div><p>
       <label for = "gender">Gender</label>
-      <input type = "text" id = "gender" name = "gender"><p>
+      <input type = "text" id = "gender" name = "gender" class = "form-control" required><br>
+      <div class = "invalid-feedback">
+        Please input your gender to proceed.
+      </div><p>
       <label for = "skin_color">Skin color</label>
-      <input type = "text" id = "skin_color" name = "skin_color"><p>
-      <button type="submit">Match me</button>
+      <input type = "text" id = "skin_color" name = "skin_color" class = "form-control" required><br>
+      <div class = "invalid-feedback">
+        Please provide your skin color to proceed.
+      </div><p>
+      <button type="submit" class = "btn btn-primary">Match me</button>
     </form>
   </div>
 </body>
