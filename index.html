@@ -3,8 +3,8 @@
 
 <head>
   <title>Celebrity Dating Quiz</title>
-  <link href = "css/bootstrap.css" rel = "stylesheet" type = "text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/scripts.js"></script>
 </head>
 
@@ -13,32 +13,40 @@
     <h1>Celebrity Dating Quiz</h1>
     <p>Please enter your details in the form below, so we can match you with someone you are compatible with.</p>
     <form>
-      <label for = "age">Age</label>
-      <input type = "text" id = "age"  class = "form-control" name = "age" required><p>
-      <label for = "gender">Gender</label>
-      <input type = "text" id = "gender" name = "gender" class = "form-control" required><p>
-      <label for = "skin_color">Skin color</label>
-      <input type = "text" id = "skin_color" name = "skin_color" class = "form-control" required><p>
-      <button type="submit" class = "btn btn-primary">Match me</button>
+      <label for="age">Age</label>
+      <input type="number" id="age" class="form-control" name="age">
+      <p>
+      <div id="ageError" class="hidden">
+        Please enter your age.
+      </div>
+      <!--<label for="gender">Your Gender</label><br>-->
+      Please select your gender<br>
+      <label><input type="radio" id="gender" name="gender" value="female">Female</label>
+      <label><input type="radio" id="gender" name="gender" value="male">Male</label><br>
+      <div id="genderError" class="hidden">
+        Error! Please select your gender.
+      </div>
+     <!-- <button type="submit">Match Me</button>-->
+      <button type="submit" class="btn btn-primary">Match me</button>
     </form>
+  </div>
+  <div id="error" class="hidden">
+    Error! We are unable to match you with anyone. Please come back when you are 18.
+  </div>
+  <div id="Nazizi" class="hidden">
+    <div class="card card-body card-text">
+      Wow, you are compatible with Nazizi!
     </div>
-    <div id = "errorMessaGE" class = "hidden">
-      Error! Pleas fill all blank fields.
+  </div>
+  <div id="Jalas" class="hidden">
+    <div class="card card-body card-text">
+      Congratulations, you are compatible with Jalas!
     </div>
-  <div id = "Nazizi" class = "hidden">
-    <div class = "card card-body card-text">
-    Wow, you are compatible with Nazizi!
   </div>
-  </div>
-  <div id = "Jalas" class = "hidden">
-    <div class = "card card-body card-text">
-    Congratulations, you are compatible with Jalas!
-  </div>
-  </div>
-  <div id = "JuaCali" class = "hidden">
-    <div class = "card card-body card-text">
-    Alas, you are compatible with JuaCali.
-  </div>
+  <div id="JuaCali" class="hidden">
+    <div class="card card-body card-text">
+      Alas, you are compatible with JuaCali.
+    </div>
   </div>
 </body>
 
